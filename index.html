@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="" />
+    <title>GRAZIO FRANKY</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.4.1/vanilla-tilt.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <input type="checkbox" id="check">
+            <div class="logo"><a href="index.html"><img src="./FRANKY Logo 1.png" class="logo"></a></div>
+            <ul>
+                <label class="button cancel" for="check"><i class="fas fa-times"></i></label>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./assets/pages/about_us.html">ABOUT US</a></li>
+                <li><a href="./assets/pages/contact_us.html">CONTACT US</a></li>
+            </ul>
+            <label class="button bars" for="check"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+    <div class="video_and_text">
+        <img src="./assets/images/web-development.jpg"
+            class="video"></video>
+        <h1 class="text"><span>LET'S LEAD TO WEB</span></h1>
+    </div>
+
+    <!--About us section-->
+    <div class="about_us">
+        <div class="about-us-text">
+            <h3 class="text_about_us">ABOUT US</h3>
+            <hr class="underline">
+        </div>
+        <div class="contant">
+            <div class="about_img"><img class="about-us-photo" src="./FRANKY Logo 1.png"></div>
+            <div class="vl"></div>
+            <div class="text-about">
+                <p class="about">
+                    <span class="lets">GRAZIO FRANKY</span> is a web development company that specializes in creating custom websites and web applications for businesses. With a focus on user experience and responsive design, they deliver high-quality web solutions that help their clients achieve their digital goals.
+                </p>
+            </div>
+            <div class="button-about-us">
+                <!--<button class="learn_more"><a href="./assets/pages/about_us.html" class="learn-more">LEARN MORE</a></button>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="get-social">
+        <section class="section--container">
+            <div class="container">
+                <h1 class="main-title">
+                  <span class="title">Get social</span>
+                </h1>
+                <div class="box box-1">
+                  <a href="https://www.instagram.com//" target="_blank">
+                    <i class="fab fa-instagram fa-5x icon"></i>
+                  </a>
+                </div>
+                <div class="box box-2">
+                  <a href="http://facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f fa-5x icon"></i>
+                  </a>  
+                </div>
+                <div class="box box-3">
+                  <a href="https://youtube.com/" target="_blank">
+                    <i class="fab fa-youtube fa-5x icon"></i>
+                  </a>
+                </div>
+                <div class="box box-4">
+                    <a href="https://web.whatsapp.com"></a>
+                    <i class="fab fa-whatsapp fa-5x icon"></i>
+                  </a>
+              </div>
+            </div>
+          </section>
+    </div>
+    <script>
+        VanillaTilt.init(document.querySelector(".main-title"),{
+        max: 30,
+        speed: 600,
+        scale: 1,
+        transition: true,
+        easing: "cubic-bezier(.03,.98,.52,.99)",
+        perspective: 400,
+    });
+
+    VanillaTilt.init(document.querySelectorAll(".box"),{
+        max: 30,
+        speed: 600,
+        scale: 1,
+        transition: true,
+        easing: "cubic-bezier(.03,.98,.52,.99)",
+        perspective: 600,
+        glare: true
+    });
+    </script>
+</body>
+</html>
